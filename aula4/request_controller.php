@@ -16,16 +16,26 @@ class RequestController
 		
 
 
-	//	$request_info['REMOTE_ADDR'];
-	//	$request_info['SERVER_ADDR'];
+		if(!filter_var($request_info['REMOTE_ADDR'], FILTER_VALIDATE_IP){
+			return array("code"=>"502", "message" => "invalid remote ip");
+		}
+
+		if(!filter_var($request_info['SERVER_ADDR'], FILTER_VALIDATE_IP){
+			return array("code"=>"502", "message" => "invalid server ip");
+		}
 		if(!self::is_valid_protocol($request_info['SERVER_PROTOCOL'])){
 			return array("code"=>"400", "message" => "invalid protocol");
 		}
-	//	$request_info['REQUEST_URI'];
-	//	$request_info['QUERY_STRING'];
+		if(strpos($request_info['REQUEST_URI'], ' ') != false){
+			return array("code"=>"400", "message" => "invalid uri");
+		}
+	
+		if(strpos($request_info['QUERY_STRING'], ' ') != false){
+			return array("code"=>"400", "message"=>"invalid query");
+		}
 	//	file_get_contents('php://input');
 		
-	//	return new Request();
+		return new Request();
 			
 	}
 	
