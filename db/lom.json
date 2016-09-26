@@ -1,0 +1,152 @@
+'lom':{
+	'_id':1,
+	'general':{
+		'catalog':'ISBN',
+		'entry':'2-7342-0318',
+		'title':{
+			'lang':'en',
+			'value':'The life and works of Leonardo da Vinci'
+		},
+		'lang':'en',
+		'description':[
+			{
+				'lang':'en'
+				'value':'In this video clip, the life and works of Leonardo da Vinci are briefly presented. The focus is on his artistic production, most notably the Mona Lisa.'
+			}
+		],
+		'keyword':[
+			{
+				'type':'general_term',
+				'ext_id':'1'
+			}
+		]
+		'coverage':[
+			{
+				'lang':'en',
+				'value':'16th century France'
+			}
+		],
+		'structure':'atomic',
+		'agregation_level':1
+	},
+	'life_cycle':{
+		'version':{
+			'initials':'en',
+			'value':'1.2 Alpha'
+		},
+		'status':'draft',
+		'contribute':[
+			{
+				'role':'author',
+				'entity':'BEGIN:VCARD\nFN:Joe Friday\nTEL:+1- 919-555-7878\nTITLE:Area Administrator\, Assistant\n EMAIL\;TYPE=INTERN\nET:jfriday@host.c om\nEND:VCARD\n',
+				'date':'2016-01-01' 
+			}
+		]
+	},
+	'meta_metadata':{
+		'_id':1,
+		'catalog':'ARIADNE',
+		'entry':'KUL532',
+		'contribute':[
+			{
+				'role':'author',
+				'entity':'BEGIN:VCARD\nFN:Joe Friday\nTEL:+1- 919-555-7878\nTITLE:Area Administrator\, Assistant\n EMAIL\;TYPE=INTERN\nET:jfriday@host.c om\nEND:VCARD\n',
+				'date':'2016-01-01' 
+			}
+		],
+		'schema':['LOMv1.0'],
+		'lang':'en'
+	},
+	'technical':{
+		'format':[
+			'video/mpeg'
+		],
+		'size':'4200',
+		'location':'http://host/id',
+		'requirement':[
+			'type':'browser',
+			'name':'google chrome',
+			'minimum_version':'1',
+			'maximum_version':'99'
+		],
+		'installation':{
+			'remarks':{
+				'lang':'en',
+				'value':'Unzip the zip file and launch index.html in your web browser.' 
+			},
+			'plataform_requirements':[
+				{
+					'lang':'en',
+					'value':'sound card'
+				}
+			],
+			'duration':'PT1H30M'
+		}
+	},
+	'educational':[
+		{
+			'interactivity_type':'active',
+			'learning_resource_type':[
+				'simulation','slide'
+			],
+			'interactivity_level': 'low',
+			'semantic_density':'low',
+			'intend_end_user_role':'learner',
+			'context':'school',
+			'typical_age_range':[
+				{
+					'lang':'',
+					'value':'10-15'
+				}
+			],
+			'difficulty':'easy',
+			'learning_time':'PT1H30M',
+			'description':[
+				{
+					'lang':'en',
+					'value':'Video to explain easily the subject'
+				}
+			],
+			'lang':'en'
+		}
+	],
+	'rights':{
+		'cost':false,
+		'restrictions':false,
+		'description':[
+			{
+				'lang':'en',
+				'value':'Use of this learning object is only permitted after a donation has been made to Amnesty International.'
+			}
+		]
+	},
+	'relation':[
+		{
+			'kind':'',
+			'lom_id':''
+		}
+	],
+	'annotation':[
+		{
+			'entity':'BEGIN:VCARD\nFN:Joe Friday\nTEL:+1- 919-555-7878\nTITLE:Area Administrator\, Assistant\n EMAIL\;TYPE=INTERN\nET:jfriday@host.c om\nEND:VCARD\n',
+			'date':'2016-01-01',
+			'description':[
+				{
+					'lang':'en',
+					'value':'Use of this learning object is only permitted after a donation has been made to Amnesty International.'
+				}
+			]
+		}
+	],
+	'classification':[
+		{
+			'purpose':'educational objective',
+			'taxonomy':[
+				{
+					'type':'specific_term',
+					'ext_id':'13'
+				}
+			]
+		}
+	]
+}
