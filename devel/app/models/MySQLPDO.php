@@ -1,6 +1,6 @@
 <?php
 	
-private MySQLPDO extends PDO{
+class MySQLPDO extends PDO{
 	
 	private $engine;
 	private $host;
