@@ -10,7 +10,7 @@ class MySQLPDO extends PDO{
 	private $conn;
 	
 	public function __construct(){
-		$ini = parse_ini_file('../config/db_config.ini');
+		$ini = parse_ini_file('../../config/db_config.ini');
 		
 		$this->engine = 'mysql';
 		$this->host = $ini['db_host'];
