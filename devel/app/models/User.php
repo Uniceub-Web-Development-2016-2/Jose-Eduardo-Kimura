@@ -9,8 +9,7 @@ class User{
 	private $boolCoordinator;
 	private $boolAdmin;
 
-	function __construct($idUser,$strName, $strEmail, $strLogin, $strPass, $boolCoordinator, $boolAdmin){
-		$this->idUser = $idUser;
+	function __construct($strName, $strEmail, $strLogin, $strPass, $boolCoordinator, $boolAdmin){
 		$this->strName = $strName;
 		$this->strEmail = $strEmail;
 		$this->strLogin = $strLogin;

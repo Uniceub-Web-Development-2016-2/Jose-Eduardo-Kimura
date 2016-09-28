@@ -6,8 +6,7 @@ class Subject{
 	private $discipline;
 	private $parent;
 
-	function __construct($idSubject, $discipline, $parent){
-		$this->idSubject = $idSubject;
+	function __construct($discipline, $parent){
 		$this->discipline = $discipline;
 		$this->parent = $parent;
 	}
@@ -23,5 +22,6 @@ class Subject{
 	      $this->$property = $value;
 	    }
 	}
-
+	
+	
 }

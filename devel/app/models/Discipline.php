@@ -6,8 +6,7 @@ class Discipline{
 	private $strDescription;
 	private $intPeriod;
 
-	function __construct($idDiscipline, $strDescription, $intPeriod){
-		$this->idDiscipline = $idDiscipline;
+	function __construct($strDescription, $intPeriod){
 		$this->strDescription = $strDescription;
 		$this->intPeriod = $intPeriod;
 	}

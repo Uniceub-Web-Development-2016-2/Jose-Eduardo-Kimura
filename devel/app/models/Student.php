@@ -7,8 +7,7 @@ class Student{
 	private $strName;
 	private $strStudentID;
 
-	function __construct($idStudent, $studentClass, $strName, $strStudentID){
-		$this->idStudent = $idStudent;
+	function __construct($studentClass, $strName, $strStudentID){
 		$this->studentClass = $studentClass;
 		$this->strName = $strName;
 		$this->strStudentID = $strStudentID;
