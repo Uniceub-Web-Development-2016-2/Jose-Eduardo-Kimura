@@ -41,5 +41,50 @@ class ResourceController
 		return $query;
 	}
 
+  private function update($request) {
+                $body = $request->getBody();
+                $resource = $request->getResource();
+                $query = 'UPDATE '.$resource.' SET '. $this->getUpdateCriteria($body);
+                var_dump($query);
+    die();
+    return $query;
+
+  }
+
+  private function getUpdateCriteria($json){
+    $criteria = "";
+    $where = " WHERE ";
+    $array = json_decode($json, true);
+    foreach($array as $key => $value) {
+      if($key != 'id')
+        $criteria .= $key." = '".$value."',";
+
+    }
+    return substr($criteria, 0, -1).$where." id = ".$array['id'];
+  }
+
+  private function getColumns($json){
+    $array = json_decode($json, true);
+    $keys = array_keys($array);
+    return implode(",", $keys);
+
+  }
+
+  private function getValues($json){
+                $array = json_decode($json, true);
+                $keys = array_values($array);
+                $string =  implode("','", $keys);
+    return "'".$string."'";
+
+  }
+
+  private function queryParams($params) {
+		$query = "";
+		foreach($params as $key => $value) {
+			$query .= $key.' = '.$value.' AND ';
+		}
+		$query = substr($query,0,-5);
+		return $query;
+	}
 
 }
